@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -35,4 +35,71 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #36393f;
+  color: #fff;
+  font-size: 26px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.input {
+  background-color: #2f3136;
+  color: #fff;
+  height: 31px;
+  width: inherit;
+  padding-right: 10px;
+}
+form {
+  width: inherit;
+  display: flex;
+}
+
+button {
+  background-color: #7289da;
+  color: #fff;
+  border: 0;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #677bc4;
+}
+
+.element {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /* border: 1px solid black; */
+  margin: 4px;
+  width: inherit;
+  position: relative;
+}
+
+.element button{
+  position:absolute;
+  right: 0;
+  height: 31px;
+  background-color: firebrick;
+}
+.element input {
+  position:absolute;
+  right: 60px;
+  height: 31px;
+  width: 31px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form button {
+  height: 35px;
+  border: 0;
 }
