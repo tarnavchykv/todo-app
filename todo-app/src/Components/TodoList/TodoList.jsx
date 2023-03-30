@@ -11,14 +11,16 @@ const TodoList = () => {
         const idList = itemList.map((item) => item.id);
         const newId =  idList.length ? idList.at(-1) + 1 : 0;
         console.log(newId);
-        const newElement = {
-            id: newId,
-            text: name,
-            completed: false
-        };
-        setName("");
-        setItemList([...itemList, newElement]);
-        localStorage.setItem('itemList', JSON.stringify([...itemList, newElement]));
+        if (name) {
+            const newElement = {
+                id: newId,
+                text: name,
+                completed: false
+            };
+            setName("");
+            setItemList([...itemList, newElement]);
+            localStorage.setItem('itemList', JSON.stringify([...itemList, newElement]));
+    }
     };
 
     useEffect(() => {
